@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What an Ugly Page</title>
+  <style>
+    html * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header, nav {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style-type: square;
+      padding-left: 20px;
+      margin: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    nav ul li {
+      color: #ff6347;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      color: #ff6347;
+    }
+
+    nav ul li a:visited {
+      color: #800080;
+    }
+
+    nav ul li a:active {
+      color: #ff0000;
+    }
+
+    .container {
+      display: flex;
+      background-color: #f4f4f4; /* Same background color for both columns */
+    }
+
+    .left-column {
+      flex: 0 0 70%; /* 70% width */
+      padding: 20px;
+    }
+
+    .right-column {
+      flex: 0 0 30%; /* 30% width */
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-left: 2px solid #ccc; /* Vertical line between columns */
+    }
+
+    .right-column img {
+      width: 100%; /* Make images fill the column width */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 20px;
+    }
+
+    h2, h3 {
+      color: #333;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    footer {
+      clear: both;
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left-column,
+      .right-column {
+        flex: 1; /* Full width on smaller screens */
+      }
+
+      .right-column {
+        border-left: none; /* Remove vertical line on smaller screens */
+        border-top: 2px solid #ccc; /* Add horizontal line instead */
+        padding-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>What an Ugly Page</h1>
+    <p>There's plenty of room for growth</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="https://www.google.com" target="_blank" rel="nofollow">Google</a></li>
+      <li><a href="https://www.youtube.com" target="_blank" rel="nofollow">YouTube</a></li>
+      <li>
+        <a href="https://www.github.com" target="_blank" rel="nofollow">GitHub</a>
+        <ul>
+          <li><a href="https://www.github.com/features" target="_blank" rel="nofollow">GitHub Features</a></li>
+          <li><a href="https://www.github.com/pricing" target="_blank" rel="nofollow">GitHub Pricing</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="https://www.reddit.com" target="_blank" rel="nofollow">Reddit</a>
+        <ul>
+          <li><a href="https://www.reddit.com/r/programming" target="_blank" rel="nofollow">Programming Subreddit</a></li>
+          <li><a href="https://www.reddit.com/r/webdev" target="_blank" rel="nofollow">WebDev Subreddit</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="left-column">
+      <section class="primary">
+        <article>
+          <h2>My Topic of Interest: Space Exploration.</h2>
+          <p>Advancements in technology have been the driving force behind space exploration. Modern telescopes, like the James Webb Space Telescope, allow us to observe distant galaxies and exoplanets, while robotic missions, such as the Mars rovers, provide valuable data about other planets. Innovations in propulsion systems, materials science, and artificial intelligence continue to push the boundaries of what is possible, making interstellar travel a future possibility.</p>
+        </article>
+      </section>
+
+      <section>
+        <article>
+          <h2>Article 1: The Dawn of Space Exploration.</h2>
+          <p>Space exploration began in earnest during the mid-20th century, marked by the launch of the first artificial satellite, Sputnik 1, by the Soviet Union in 1957. This event ignited the Space Race between the United States and the Soviet Union, leading to groundbreaking achievements like the first human in space, Yuri Gagarin, in 1961, and the Apollo 11 moon landing in 1969. These milestones not only demonstrated human ingenuity but also opened the door to understanding our place in the universe.</p>
+        </article>
+        <article>
+          <h2>Article 2: The Future of Space Exploration.</h2>
+          <p>The future of space exploration is filled with exciting possibilities. Plans for manned missions to Mars, the establishment of lunar bases, and the search for extraterrestrial life are at the forefront of scientific endeavors. Private companies like SpaceX and Blue Origin are also playing a significant role, reducing costs and increasing accessibility to space. As we venture further into the cosmos, the potential for discovery and collaboration among nations grows, promising a new era of exploration and innovation.</p>
+        </article>
+      </section>
+
+      <aside>
+        <section>
+          <h3>Fake Ad 1: Potato Slicer.</h3>
+          <p>Buy the Super Slicer today! It slices, it dices, and it makes julienne fries!</p>
+        </section>
+        <section>
+          <h3>Fake Ad 2: Mega Blaster.</h3>
+          <p>The Mega Blaster is the ultimate tool for all your blasting needs!</p>
+        </section>
+      </aside>
+    </div>
+
+    <div class="right-column">
+      <img src="Images/tecnology.jpg" alt="Technology">
+      <img src="Images/dawn space.png" alt="Dawn of Space Exploration">
+      <img src="Images/future.png" alt="Future of Space Exploration">
+      <img src="Images/slicer.png" alt="Potato Slicer">
+      <img src="Images/blaster.jpg" alt="Nerf Blaster">
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Erick Lasso, College of DuPage.</p>
+  </footer>
+</body>
+</html>
