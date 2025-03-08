@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chaparral's HTML and CSS Class Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Chaparral's HTML and CSS Class Form</h1>
+  <div class="image-container">
+    <img src="images/chaparral.webp" alt="College of DuPage Mascot">
+  </div>
+  <form action="#" method="POST">
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="full_name" class="required">Full Name:</label>
+      <input type="text" id="full_name" name="full_name" required>
+      <label for="email" class="required">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob">
+    </fieldset>
+    <fieldset>
+      <legend>Favorite Hobby</legend>
+      <label>
+        <input type="radio" name="hobby" value="reading"> Reading
+      </label><br>
+      <label>
+        <input type="radio" name="hobby" value="gaming"> Gaming
+      </label><br>
+      <label>
+        <input type="radio" name="hobby" value="sports"> Sports
+      </label><br>
+      <label>
+        <input type="radio" name="hobby" value="traveling"> Traveling
+      </label><br>
+    </fieldset>
+    <fieldset>
+      <legend>Additional Information</legend>
+      <label>
+      <label for="language">Favorite Programming Language:</label>
+      <select id="language" name="language">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="other">Other</option>
+      </select><br>
+      <label for="comments">Why is your favorite programming language?</label>
+      <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+    </fieldset>
+    <div class="submit-container">
+      <button type="submit">Submit</button>
+    </div>
+    <p class="required-message">Required fields are marked in <span class="red">Red</span>.</p>
+    <p class="signature">This form was made by Erick, College of DuPage, 2025.</p>
+  </form>
+</body>
+</html>
