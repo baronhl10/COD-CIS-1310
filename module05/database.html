@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Super Baseball League ERD</title>
+<style>
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #007bff;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tr-entity {
+    background-color: #e0f7fa;
+}
+
+.tr-relationship {
+    background-color: #ffe0b2;
+}
+
+.tr-attribute{
+    background-color: #c8e6c9;
+}
+
+.strong-key{
+    color: red;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.entity-container, .relationship-container{
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.relationship-container{
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Super Baseball League Entity-Relationship Diagram</h1>
+
+<div class="container">
+    <div class="entity-container">
+        <h2>Entities</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Entity Name</th>
+                    <th>Attributes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr-entity">
+                    <td><strong>Team</strong></td>
+                    <td>TeamNumber (<strong class="strong-key">PK</strong>), TeamName, City, ManagerName</td>
+                </tr>
+                <tr class="tr-entity">
+                    <td><strong>Player</strong></td>
+                    <td>PlayerNumber (<strong class="strong-key">PK</strong>), PlayerName, Age</td>
+                </tr>
+                <tr class="tr-entity">
+                    <td><strong>Coach</strong></td>
+                    <td>CoachName, TelephoneNumber</td>
+                </tr>
+                <tr class="tr-entity">
+                    <td><strong>Bat</strong></td>
+                    <td>SerialNumber, ManufacturerName</td>
+                </tr>
+                <tr class="tr-entity">
+                    <td><strong>WorkExperience</strong></td>
+                    <td>ExperienceType, Years</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="relationship-container">
+        <h2>Relationships</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Relationship</th>
+                    <th>Cardinality</th>
+                    <th>Attributes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="tr-relationship">
+                    <td>Team - Coach</td>
+                    <td>1:N</td>
+                    <td></td>
+                </tr>
+                <tr class="tr-relationship">
+                    <td>Team - Bat</td>
+                    <td>1:N</td>
+                    <td></td>
+                </tr>
+                <tr class="tr-relationship">
+                    <td>Coach - WorkExperience</td>
+                    <td>1:N</td>
+                    <td></td>
+                </tr>
+                <tr class="tr-relationship">
+                    <td>Team - Player</td>
+                    <td>M:N</td>
+                    <td>YearsPlayed, BattingAverage</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

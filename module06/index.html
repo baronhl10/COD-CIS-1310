@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Images</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <figure>
+    <picture>
+      
+      <source srcset="images/mobile500.webp" media="(max-width: 600px)" type="image/webp">
+      
+      <source srcset="images/mobile500.png" media="(max-width: 600px)" type="image/png">
+      
+      <source srcset="images/desktop1000.webp" type="image/webp">
+      
+      <source srcset="images/fallback.webp" type="image/webp">
+      
+      <img src="images/fallback.webp" alt="A distant perspective of Earth, emphasizing its place within the cosmos.">
+    </picture>
+    <figcaption>The Earth in its entirety, viewed from a remote perspective.</figcaption>
+  </figure>
+</body>
+</html>
