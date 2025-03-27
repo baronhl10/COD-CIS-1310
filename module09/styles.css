@@ -1,0 +1,98 @@
+:root {
+    --forest-green: #b1b1b1;
+    --light-green: #d4edda;
+    --dark-green: #1e3b1e;
+    --cream: #1f1f1f;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: var(--forest-green);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--cream);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    background-color: var(--dark-green);
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.header-image {
+    width: 50%;
+    max-height: 300px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-bottom: 5px solid var(--black);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.wireframe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px;
+    justify-content: center;
+}
+
+.wireframe {
+    flex: 1;
+    min-width: 300px;
+    border: 2px solid var(--forest-green);
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.wireframe:hover {
+    transform: translateY(-5px);
+}
+
+.wireframe img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--dark-green);
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .wireframe {
+        flex: 100%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
