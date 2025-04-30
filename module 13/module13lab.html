@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COD - CIS Certificates</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>College of DuPage</h1>
+    <div class="logo-container">
+      <img src="images/chapslogo.png" alt="College of DuPage Logo" class="cod-logo" />
+    </div>
+    <button id="toggle">☰ Menu</button>
+    <div id="menu" class="sliding-menu">
+      <a href="#about">📘 About CIS</a>
+      <a href="#degrees">🎓 Degree Info</a>
+      <a href="#certificates">📜 Certificates</a>
+      <a href="#contact">📞 Contact</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Explore Certificates in Computer and Information Science</h2>
+    <p>Your path to a career in technology starts here.</p>
+  </section>
+
+  <section id="about" class="overview">
+    <h3>About the Program</h3>
+    <p>The Computer and Information Science (CIS) program gives students a variety of options to prepare for a career in information technology (IT). Earn one of six Associate in Applied Science degrees or choose from over fifteen certificates to enhance your skills.</p>
+    <p>Facilities and equipment are housed in the Seaton Computing Center (SCC) and Berg Instructional Center (BIC), including AR/VR labs, simulation labs, and software/web development labs.</p>
+  </section>
+
+  <section id="certificates" class="certificates">
+    <h3>Certificate Programs</h3>
+    <div class="certificate-list">
+      <div class="card"><h4>Business Productivity</h4><p>19 credit hours</p></div>
+      <div class="card"><h4>Python Language Proficiency</h4><p>Core skills in Python programming and data structures.</p></div>
+      <div class="card"><h4>iOS Developer Proficiency</h4><p>Design and develop iOS applications.</p></div>
+      <div class="card"><h4>JAVA Language Proficiency</h4><p>15 credit hours</p></div>
+      <div class="card"><h4>Game Design and Development</h4><p>Prepare for careers in video game design and development.</p></div>
+      <div class="card"><h4>Web Client Developer</h4><p>HTML5, CSS, JavaScript, GUI tools, client-side development.</p></div>
+      <div class="card"><h4>Web Programmer</h4><p>32 credit hours</p></div>
+      <div class="card"><h4>Windows Network Administration</h4><p>Design and implement Microsoft networks using Active Directory.</p></div>
+    </div>
+  </section>
+
+  <div class="parallax"></div>
+
+  <section id="degrees" class="careers">
+    <h3>Why Choose COD?</h3>
+    <p>With continued growth in tech careers, you can become an application developer, network administrator, game programmer, data analyst, or IT support specialist.</p>
+  </section>
+
+  <section class="dropdown">
+    <h3>Choose a Certificate</h3>
+    <select id="fruitSelect">
+      <option value="">-- Select --</option>
+      <option value="Python Language Proficiency">Python Language Proficiency</option>
+      <option value="iOS Developer Proficiency">iOS Developer Proficiency</option>
+      <option value="Business Productivity">Business Productivity</option>
+      <option value="Web Programmer">Web Programmer</option>
+    </select>
+    <p id="choice"></p>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2025 College of DuPage    Made by: Erick Lasso</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
