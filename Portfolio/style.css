@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #083f29;
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/symphony.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: #083f29;
+    text-align: center;
+  }
+  
+  .wrapper {
+    max-width: 960px;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  header, footer, section {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px #a3a3a3;
+    color: #083f29;
+  }
+  
+  .header-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .header-images h1 {
+    flex: 1;
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .header-images img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0;
+    margin-top: 1rem;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #083f29;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    background-color: #a3a3a3;
+    color: white;
+  }
+  
+  .experience-item {
+    display: flex;
+    gap: 0rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border: 1px solid #a3a3a3;
+    border-radius: 10px;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .experience-item img {
+    max-width: 300px;
+    border-radius: 10px;
+  }
+  
+  .interests-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.1rem;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .interest-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #083f29;
+    text-decoration: none;
+    background-color: #a3a3a3;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .interest-link:hover {
+    background-color: #8d8d8d;
+    color: white;
+  }
+  
+  .parallax {
+    position: relative;
+    overflow: hidden;
+    background-image: url('images/exchange-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #083f29;
+  }
+  
+  .parallax::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.85);
+    z-index: 0;
+  }
+  
+  .parallax h2,
+  .parallax p,
+  .parallax iframe {
+    position: relative;
+    z-index: 1;
+    color: #083f29;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .form-group {
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  input,
+  textarea,
+  button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input,
+  textarea {
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 1px solid #a3a3a3;
+    border-radius: 5px;
+    color: #083f29;
+    text-align: center;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #a3a3a3;
+  }
+  
+  button {
+    background-color: #a3a3a3;
+    color: white;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #8d8d8d;
+  }
+  
+  .footer-nav {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .back-link {
+    display: inline-block;
+    background-color: #083f29;
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-link:hover {
+    background-color: #0a5f35;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+    color: #083f29;
+    margin-top: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .nav-links {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .experience-item {
+      flex-direction: row;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
